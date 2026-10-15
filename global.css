@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Playfair+Display:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { margin: 0; background-color: #ffffff; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 72px; }
+
+[role="button"]:focus-visible,
+[role="link"]:focus-visible {
+  outline: 3px solid #5a6b3d;
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
